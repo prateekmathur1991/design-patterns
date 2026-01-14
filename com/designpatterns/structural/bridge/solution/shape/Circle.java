@@ -9,13 +9,16 @@ import com.designpatterns.structural.bridge.solution.color.Color;
  * Similarly, if a red triangle is desired, I only to need change the Shape hierarchy (by introducing a new Shape) and leave the colors hierarchy untouched.
  */
 public class Circle extends Shape {
+
+    private int radius;
     
-    public Circle(Color color) {
-        this.color = color;
+    public Circle(Color color, int radius) {
+        super(color);
+        this.radius = radius;
     }
 
     @Override
     public String toString() {
-        return "I am a circle of " + this.color + " color";
+        return "I am a circle of " + this.color + " color and radius " + this.radius;
     }
 }
