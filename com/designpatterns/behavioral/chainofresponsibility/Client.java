@@ -8,6 +8,6 @@ public class Client {
 
         handler1.handleRequest("Request1");
         handler1.handleRequest("Request2");
-        handler1.handleRequest("Request3");
+        // handler1.handleRequest("Request3");
     }
 }
